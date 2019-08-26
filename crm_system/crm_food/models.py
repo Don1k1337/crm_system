@@ -10,7 +10,7 @@ class Table(models.Model):
 class Role(models.Model):
     name = models.CharField(max_length=50)
     def __str__(self):
-        return self.name
+        return self.namez
 
 class Department(models.Model):
     name = models.CharField(max_length=50)
@@ -20,7 +20,7 @@ class Department(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=50)
     departmentid = models.ForeignKey(Department, on_delete=models.CASCADE, related_name="categories")
-    def __str__(self):
+    def __str__(self)Category:
         return self.name
 
 class Status(models.Model):
@@ -52,3 +52,4 @@ class Meal(models.Model):
     def __str__(self):
         return self.name
 
+status.HTTP_204_NO_CONTENT)
